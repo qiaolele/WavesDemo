@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>waves水波纹</title>
+    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <p>
+        <strong>使用方法：</strong>1）为需要添加特效的div 或者class 添加waves-effect 、 .waves-button 这两个类即可，waves-float可根据需要选填。<br>
+                                 2）按钮背景颜色样式必须写到行间，否则不生效或者效果不对；<br>
+                                 3）input和submit虽然都可以，但是点击的时候会抖动，不建议使用，建议使用button或者a标签
+    </p>
+    <!--无背景色-->
+    <p class="text-center">
+        <a class="waves-effect waves-button">Button A</a>
+        <button class="waves-effect waves-button">Button B</button>
+        <i class="waves-effect waves-button waves-input-wrapper"><input class="waves-button-input" type="submit" value="Button C"></i>
+        <i class="waves-effect waves-button waves-input-wrapper"><input class="waves-button-input" type="button" value="Button D"></i>
+    </p>
+
+    <!--有背景色-->
+    <p class="text-center">
+        <a class="waves-effect waves-button waves-float" style="background: #01BCFF;color:#fff">Button A</a>
+
+        <button class="waves-effect waves-button waves-light waves-float" style="background: #1bb556;color: #fff;">Button B</button>
+
+        <i class="waves-effect waves-button waves-float waves-input-wrapper" style="background: #ff4f0f;color:#fff">
+            <input class="waves-button-input" type="submit" value="Button C">
+        </i>
+
+        <i class="waves-effect waves-button waves-light waves-float waves-input-wrapper" style="background: #666;color:#fff">
+            <input class="waves-button-input" type="button" value="Button D">
+        </i>
+    </p>
+
+
+    </div>
+    <p class="text-center">
+        <i class="fa fa-bars waves-effect waves-circle" style="background: #ff6400;color:#fff;">
+            <span class="icon-keyboard_arrow_right"></span>
+        </i>
+        <i class="fa fa-bookmark waves-effect waves-circle waves-light" style="background: #d54f38;color:#fff;">
+            <span class="icon-favorite"></span>
+        </i>
+        <i class="fa fa-calendar waves-effect waves-circle" style="background: #eb4d7e;color:#fff;">
+            <span class="icon-thumb_up"></span>
+        </i>
+        <i class="fa fa-envelope waves-effect waves-circle waves-light" style="background: #d138c8;color:#fff;">
+            <span class="icon-thumb_down"></span>
+        </i>
+        <i class="fa fa-exclamation waves-effect waves-circle" style="background: #bd73ff;color:#fff;">
+            <span class="icon-home"></span>
+        </i>
+        <i class="fa fa-folder waves-effect waves-circle waves-light" style="background: #0074d6;color:#fff;">
+            <span class="icon-image"></span>
+        </i>
+        <i class="fa fa-gear waves-effect waves-circle" style="background: #00d3d6;color:#fff;">
+            <span class="icon-user"></span>
+        </i>
+        <i class="fa fa-image waves-effect waves-circle waves-light" style="background: #24ad72;color:#fff;">
+            <span class="icon-cog"></span>
+        </i>
+        <i class="fa fa-user waves-effect waves-circle" style="background:#8ee05e;color:#fff;">
+            <span class="icon-info"></span>
+        </i>
+    </p>
+
+
+    <!--<button class="btn waves-effect waves-button">点我试试</button>-->
+    <!--<p>-->
+        <!--特别注意的是，若为input标签，则需要手动添加i标签包裹之。-->
+    <!--</p>-->
+    <!--&lt;!&ndash; Before displaying the effect &ndash;&gt;-->
+    <!--<input class="waves-button-input" type="submit" value="Button C">-->
+    <!--&lt;!&ndash; After displaying the effect &ndash;&gt;-->
+    <!--<i class="waves-effect waves-button waves-input-wrapper" style="width:85px;height:36px;">-->
+        <!--<input class="waves-button-input" type="submit" value="Button C">-->
+    <!--</i>-->
+
+    <!--<a href="#" class="waves-effect waves-button">Click Here</a>-->
+
+
+    <!--<i class="fa fa-gear waves-effect waves-circle"></i>-->
+    <!--[if gt IE 8]><!-->
+    <div class="mhl clearfix mbl">
+        <h1>Font Test Drive</h1>
+        <label>
+            Font Size: <input id="fontSize" type="number" class="textbox0 mbm" min="8" value="48">
+            px
+        </label>
+        <input id="testText" type="text" class="phl size1of1 mvl" placeholder="Type some text to test..." value="">
+        <div id="testDrive" class="icon-" style="font-size: 48px;">&nbsp;
+        </div>
+    </div>
+    <!--<![endif]-->
+</body>
+<!--<script type="text/javascript" src="js/icon.js"></script>-->
+<script type="text/javascript" src="js/waves.js"></script>
+
+<script type="text/javascript">
+    Waves.init();
+</script>
+</html>
